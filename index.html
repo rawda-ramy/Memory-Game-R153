@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory-game-07.css">
+    <link rel="stylesheet" href="style-01.css" class="style-sheet">
+    <script defer src="memory-game-07.js"></script>
+
+    <!-- BOOTSTRAP ICONS LIBRARY -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Monoton&family=Rubik+Dirt&family=Silkscreen&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Chose Your Game Style </h1>
+        <div class="styles">
+            <img class="fruit-style" src="Images/fruit style.png" alt="Fruits">
+            <img class="winter-style" src="Images/winter style.png" alt="Winter">
+            <img class="ancient-landmarks-style" src="Images/ancient landmarks style.png" alt="Ancient Landmarks">
+            <img class="desert-style" src="Images/desert style.png" alt="Desert">
+        </div>
+    </div>
+    <div class="start">
+
+        <div class="right-side">
+            <p>Memory</p>
+            <button>Let's Play </button>
+        </div>
+        <div class="left-side">
+            <p>Game</p>
+            <button> Game Menu</button>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="player-name">
+            <p></p>
+        </div>
+        <div class="false-tries">
+            <div class="icon">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <p> False tries : 0</p>
+        </div>
+        <div class="true-tries">
+            <div class="icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+            <p> True tries : 0</p>
+        </div>
+    </div>
+
+
+    <div class="game-container">
+
+        <div id="card">
+            <div id="image1" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image1" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image2" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image2" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image3" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image3" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image4" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image4" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image5" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image5" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image6" class="overlay"></div>
+            <img src="">
+        </div>
+
+        <div id="card">
+            <div id="image6" class="overlay"></div>
+            <img src="">
+        </div>
+
+    </div>
+
+
+    <div class="game-over">
+
+        <video class="ending-video" src="" autoplay="" loop="" muted="" poster=""></video>
+        <div class="overlay"></div>
+        <div class="play-again">
+            <div class="container">
+                <p class="level">Great Job</p>
+                <div class="rate">
+                    <i class="bi bi-star-fill star1"></i>
+                    <i class="bi bi-star-fill star2"></i>
+                    <i class="bi bi-star-fill star3"></i>
+                </div>
+                <div class="bar">
+                    <img src="Images/try again arrow.png" class="try-again">
+                    <img src="Images/next level arrow.png" class="next-level">
+                    <img src="Images/exit arrow 2.png" class="exit-game">
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

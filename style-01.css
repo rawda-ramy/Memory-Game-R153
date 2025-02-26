@@ -1,0 +1,54 @@
+body {
+  background-image: url(Images/style-01/fruit\ background.jpg);
+}
+.game-container .overlay {
+  background-image: url(Images/style-01/fruit\ logo.webp);
+  background-position: -20px;
+  filter: hue-rotate(364deg);
+}
+
+.info {
+  color: rgb(243, 243, 244);
+  font-weight: bold;
+}
+
+#card {
+  border: solid 5px black;
+}
+
+.bar .try-again,
+.bar .next-level,
+.exit-game {
+  filter: hue-rotate(500deg);
+}
+.game-over .overlay {
+  display: block;
+}
+.play-again {
+  background-image: url(/Images/style-01/leave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 1px;
+  left: 200px;
+  z-index: 2;
+  width: 600px;
+  transform: rotate(160deg);
+}
+.play-again .container {
+  transform: rotate(200deg);
+  padding-left: 130px !important;
+}
+
+.star1 {
+  left: 160px;
+}
+.star2 {
+  left: 220px;
+}
+.star3 {
+  left: 280px;
+}
+.star-animation {
+  top: 240px !important;
+}

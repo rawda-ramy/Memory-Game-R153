@@ -1,0 +1,53 @@
+body {
+  background-image: url(Images/style-04/ancient\ background.jpg);
+}
+.game-container .overlay {
+  background-image: url(Images/style-04/ancient\ logo.jpg);
+  background-position: -18px;
+}
+
+.info {
+  color: white;
+}
+
+#card {
+  border: solid 5px rgb(0, 2, 10);
+}
+.bar .try-again,
+.bar .next-level,
+.exit-game {
+  filter: hue-rotate(600deg);
+}
+.play-again {
+  background-image: url(Images/style-04/ancient\ door.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 150px;
+  left: 450px;
+  z-index: 2;
+  width: 600px;
+}
+.game-over .level {
+  color: black !important;
+  padding-top: 50px;
+}
+.rate i {
+  top: 260px;
+}
+.star1 {
+  left: 230px;
+}
+.star2 {
+  left: 290px;
+}
+.star3 {
+  left: 350px;
+}
+.star-animation {
+  top: 280px !important;
+}
+.play-again .level {
+  color: rgb(242, 243, 248);
+  margin-bottom: 60px;
+}

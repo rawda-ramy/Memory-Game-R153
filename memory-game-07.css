@@ -1,0 +1,488 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu {
+  width: 550px;
+  height: 600px;
+  background-color: rgb(221, 206, 120);
+  background-image: url(Images/memory\ game.jpg);
+  border-radius: 50px;
+  z-index: 3;
+  position: relative;
+  top: 100px;
+  left: 480px;
+  display: none;
+  transition: 1s;
+}
+/* ####################################### */
+
+/* @media (max-width: 634px) {
+  .menu {
+    left: 2%;
+  }
+}
+@media (min-width: 635px) and (max-width: 834px) {
+  .menu {
+    left: 20%;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 1100px) {
+  .menu {
+    left: 30%;
+  }
+} */
+
+/* ####################################### */
+.menu::before,
+.menu::after {
+  content: "";
+  position: absolute;
+  background-image: url(/Images/iron\ chain.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: -470px;
+}
+.menu::before {
+  right: -100px;
+}
+.menu::after {
+  right: -400px;
+}
+.menu h1 {
+  font-size: 45px;
+  padding: 30px;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 5px 5px white;
+}
+.menu .styles {
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.menu .styles img:hover {
+  transform: scale(1.1);
+}
+.menu img {
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 5px solid black;
+}
+.start {
+  display: flex;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.right-side,
+.left-side {
+  width: 50%;
+  height: 100%;
+  background-size: contain;
+  position: relative;
+  transition: 2.2s;
+}
+.right-side {
+  background-image: url(Images/right\ side\ gate.jpg);
+  z-index: 2;
+  left: 0;
+}
+.left-side {
+  background-image: url(Images/left\ side\ gate.jpg);
+  z-index: -1;
+  right: 0;
+}
+.start p {
+  font-family: "Monoton", cursive;
+  text-shadow: rgb(247, 184, 137) 40px 1rem 1rem;
+  font-size: 90px;
+  text-align: center;
+  color: rgb(243, 234, 234);
+  width: 150px;
+  height: 50px;
+}
+/* 
+@media (min-width: 634px) and (max-width: 734px) {
+  .start p {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 735px) and (max-width: 934px) {
+  .start p {
+    font-size: 70px;
+  }
+} */
+/* ############################################ */
+.right-side p {
+  margin-left: 300px;
+}
+/* ############################################ */
+/* @media (min-width: 634px) and (max-width: 834px) {
+  .right-side p {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 967px) {
+  .right-side p {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1100px) {
+  .right-side p {
+    margin-left: 110px;
+  }
+} */
+
+/* ################################################ */
+
+.left-side p {
+  margin-left: 20px;
+}
+/* 
+@media (min-width: 634px) and (max-width: 834px) {
+  .left-side p {
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 967px) {
+  .left-side p {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1100px) {
+  .left-side p {
+    margin-left: 120px;
+  }
+} */
+.start button {
+  font-family: "Courgette", cursive;
+  background-color: rgba(247, 214, 190, 0.71);
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(65, 16, 2);
+  padding: 15px 20px;
+  border: dotted 5px white;
+  cursor: pointer;
+}
+.right-side button,
+.left-side button {
+  margin-top: 150px;
+}
+
+.right-side button {
+  margin-left: 550px;
+}
+/* 
+@media (min-width: 634px) and (max-width: 834px) {
+  .right-side button {
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 967px) {
+  .right-side button {
+    margin-left: 170px;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1100px) {
+  .right-side button {
+    margin-left: 295px;
+  }
+} */
+
+.left-side button {
+  margin-left: 30px;
+}
+/* ########################################## */
+/* 
+@media (min-width: 634px) and (max-width: 834px) {
+  .left-side button {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 967px) {
+  .left-side button {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1100px) {
+  .left-side button {
+    margin-left: 30px;
+  }
+} */
+/* ########################################### */
+
+.info {
+  margin-top: 20px;
+  margin-left: 1100px;
+  font-size: 22px;
+  font-weight: bold;
+  width: fit-content;
+  height: 40px;
+  font-weight: bold;
+}
+/* ########################################### */
+
+/* @media (min-width: 634px) and (max-width: 834px) {
+  .info {
+    margin-left: 30px;
+    color: black !important;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 1200px) {
+  .info {
+    margin-left: 60px;
+    color: black !important;
+  }
+} */
+
+/* ########################################### */
+
+.player-name {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.player-name p {
+  margin-left: 100px;
+  z-index: -1;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  padding: 10px 10px 11px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  transform: 0.7;
+  opacity: 0.7;
+}
+.info .false-tries .icon {
+  background-color: red;
+}
+.info .true-tries .icon {
+  background-color: green;
+}
+i {
+  font-family: bootstrap-icons;
+  font-size: 28px;
+  opacity: 0.5;
+  color: white;
+}
+.info .false-tries,
+.info .true-tries {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.ending-game-container {
+  width: 170vh !important;
+  margin-left: 350px !important;
+  flex-wrap: nowrap !important;
+  margin-top: 150px !important;
+}
+.game-container {
+  width: 111vh;
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -70px;
+}
+/* ########################################### */
+/* 
+@media (min-width: 634px) and (max-width: 834px) {
+  .game-container {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 835px) and (max-width: 1200px) {
+  .game-container {
+    margin-left: 60px;
+  }
+} */
+
+/* ########################################### */
+#card {
+  margin-top: 25px;
+  filter: drop-shadow(2px 4px 6px black);
+  position: relative;
+  width: 180px;
+  height: 230px;
+  transition: 0.4s;
+  margin-right: 25px;
+  cursor: pointer;
+}
+/* ####################################### */
+/* 
+@media (min-width: 634px) and (max-width: 1100px) {
+  #card {
+    width: 155px;
+    height: 180px;
+  }
+} */
+
+/* ####################################### */
+
+#card:hover {
+  transform: scale(1.1);
+}
+#card:hover .overlay {
+  filter: grayscale(1);
+}
+.game-container img {
+  width: 100%;
+  height: 100%;
+  transform: rotatey(270deg);
+  transition: 0.5s;
+}
+.game-container .overlay {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  background-size: cover;
+}
+
+.img-turn {
+  transform: rotatey(0deg) !important;
+}
+.display-none {
+  display: none !important;
+}
+.win-turn {
+  transform: rotateY(270deg) !important;
+  width: 200px !important;
+  height: 270px !important;
+  margin-left: -25px;
+  margin-top: -100px;
+}
+span {
+  background-color: black;
+  color: gold;
+  font-size: 22px;
+  padding: 50px;
+}
+.true-light {
+  background-color: rgb(80, 227, 27) !important;
+  opacity: 1;
+  transform: scale(1.2);
+}
+.false-light {
+  background-color: rgb(248, 27, 34) !important;
+  opacity: 1;
+  transform: scale(1.2);
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.abled {
+  opacity: 1;
+}
+.animation {
+  animation: start-game 0.3s infinite;
+}
+@keyframes start-game {
+}
+.right-side-animation {
+  left: -1000px;
+}
+.left-side-animation {
+  right: -1000px;
+}
+
+/*//////////////////// 
+  GAME OVER  
+///////////////////// */
+.game-over {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.game-over video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.game-over .overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(52, 110, 52, 0.81);
+  display: none;
+}
+.play-again .container {
+  padding-top: 50px;
+  padding-left: 200px;
+}
+.game-over .level {
+  font-size: 45px;
+  margin: 100px 0px;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.rate {
+  padding-top: 30px;
+}
+.rate i {
+  position: absolute;
+  top: 220px;
+  font-size: 45px;
+  color: rgb(250, 239, 41);
+  transition: 0.3s;
+}
+.star-animation {
+  opacity: 0.5 !important;
+}
+
+.play-again .bar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.bar .try-again,
+.bar .next-level,
+.exit-game {
+  margin-left: 20px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+.bar img:hover,
+.bar .menu:hover {
+  transform: scale(1.15);
+}

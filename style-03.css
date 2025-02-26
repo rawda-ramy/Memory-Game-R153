@@ -1,0 +1,51 @@
+body {
+  background-image: url(Images/style-03/desert\ background.jpg);
+}
+.game-container .overlay {
+  background-image: url(Images/style-03/desert\ logo.webp);
+  background-position: -25px;
+}
+
+#card {
+  border: solid 5px rgb(10, 11, 1);
+}
+.bar .try-again,
+.bar .next-level,
+.exit-game {
+  filter: hue-rotate(500deg);
+}
+.play-again {
+  background-image: url(Images/style-03/desert\ tent.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 300px;
+  left: 650px;
+  z-index: 2;
+  width: 750px;
+  height: 750px;
+}
+.play-again .container {
+  padding-top: 80px;
+  padding-left: 310px;
+}
+
+.rate i {
+  color: gold;
+  top: 240px;
+}
+.star1 {
+  left: 340px;
+}
+.star2 {
+  left: 400px;
+}
+.star3 {
+  left: 460px;
+}
+.star-animation {
+  top: 260px !important;
+}
+.play-again .level {
+  color: rgb(242, 243, 248);
+  margin-bottom: 60px;
+}
