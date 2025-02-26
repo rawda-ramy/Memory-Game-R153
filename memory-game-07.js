@@ -4,6 +4,12 @@ let startGates = document.querySelector(".start"),
   playerName = document.querySelector(".player-name"),
   startGamebutton = document.querySelectorAll(".start button")[0],
   gameMenubutton = document.querySelectorAll(".start button")[1],
+  StylesArray = [
+    "fruitstyle_Function",
+    "winterstyle_Function",
+    "desertstyle_Function",
+    "ancientLandmarksstyle_Function",
+  ],
   menu = document.querySelector(".menu"),
   styleSheet = document.querySelector(".style-sheet"),
   styleTitle = document.querySelector("title"),
@@ -102,7 +108,7 @@ function gameOpener() {
         setTimeout(() => {
           img.nextElementSibling.classList.remove("img-turn");
           memoryGameaudio.play();
-        }, 8000);
+        }, 3500);
       });
     }, 1000);
     if (YourName == "") {
@@ -117,6 +123,24 @@ function gameOpener() {
 
 startGamebutton.onclick = () => {
   gameOpener();
+  let randomNamberStyle = Math.floor(Math.random() * StylesArray.length),
+    randomStyle = StylesArray[randomNamberStyle];
+
+  if (randomNamberStyle == 0) {
+    fruitstyle_Function();
+  }
+
+  if (randomNamberStyle == 1) {
+    winterstyle_Function();
+  }
+
+  if (randomNamberStyle == 2) {
+    desertstyle_Function();
+  }
+
+  if (randomNamberStyle == 3) {
+    ancientLandmarksstyle_Function();
+  }
 };
 
 // Styles Transation
@@ -284,7 +308,7 @@ gameMenubutton.onclick = () => {
 
 // Fruit Style Transition
 
-fruitStyle.addEventListener("click", () => {
+function fruitstyle_Function() {
   styleSheet.setAttribute("href", "style-01.css");
   memoryGameaudio = new Audio("audio/fruit music.mp3");
   menu.style.display = "none";
@@ -315,11 +339,15 @@ fruitStyle.addEventListener("click", () => {
   image6.forEach((img) => {
     img.nextElementSibling.setAttribute("src", "Images/style-01/appel.jpeg");
   });
+}
+
+fruitStyle.addEventListener("click", () => {
+  fruitstyle_Function();
 });
 
 // Winter Style Transition
 
-winterStyle.addEventListener("click", () => {
+function winterstyle_Function() {
   styleSheet.setAttribute("href", "style-02.css");
   memoryGameaudio = new Audio("/audio/winter music.wav");
   menu.style.display = "none";
@@ -370,11 +398,15 @@ winterStyle.addEventListener("click", () => {
     "src",
     "Images/style-02/winter ending background.mp4"
   );
+}
+
+winterStyle.addEventListener("click", () => {
+  winterstyle_Function();
 });
 
 // Desert Style Transition
 
-desertStyle.addEventListener("click", () => {
+function desertstyle_Function() {
   styleSheet.setAttribute("href", "style-03.css");
   memoryGameaudio = new Audio("audio/desert misic.m4a");
   menu.style.display = "none";
@@ -415,11 +447,15 @@ desertStyle.addEventListener("click", () => {
     "src",
     "Images/style-03/desert ending background.mp4"
   );
+}
+
+desertStyle.addEventListener("click", () => {
+  desertstyle_Function();
 });
 
 // Ancient Landmarks Style Transition
 
-ancientLandmarksstyle.addEventListener("click", () => {
+function ancientLandmarksstyle_Function() {
   styleSheet.setAttribute("href", "style-04.css");
   memoryGameaudio = new Audio("audio/ancient music.mp3");
   menu.style.display = "none";
@@ -460,4 +496,8 @@ ancientLandmarksstyle.addEventListener("click", () => {
     "src",
     "Images/style-04/ancient landmarks ending background.mp4"
   );
+}
+
+ancientLandmarksstyle.addEventListener("click", () => {
+  ancientLandmarksstyle_Function();
 });
