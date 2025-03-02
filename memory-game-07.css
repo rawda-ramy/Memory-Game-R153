@@ -28,7 +28,7 @@ body {
   }
 } */
 
-@media (min-width: 600px) and (max-width: 1600px) {
+@media (min-width: 600px) and (max-width: 1400px) {
   .right-side button {
     margin-left: 60% !important;
   }
