@@ -41,10 +41,6 @@ body {
     margin-left: 15% !important;
   }
 
-  /* .game-container {
-    width: 110vh !important;
-  } */
-
   .info .false-tries,
   .info .true-tries {
     margin-left: -120px !important;
