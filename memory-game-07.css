@@ -11,7 +11,7 @@ body {
   z-index: 3;
   position: relative;
   top: 100px;
-  left: 480px;
+  left: 20%;
   display: none;
   transition: 1s;
 }
@@ -23,16 +23,47 @@ body {
   }
 }
 @media (min-width: 635px) and (max-width: 834px) {
-  .menu {
-    left: 20%;
-  }
-}
-
-@media (min-width: 835px) and (max-width: 1100px) {
-  .menu {
-    left: 30%;
+  .right-side button {
+    margin-left: 60%;
   }
 } */
+
+@media (min-width: 600px) and (max-width: 1600px) {
+  .right-side button {
+    margin-left: 60% !important;
+  }
+
+  .left-side p {
+    margin-left: 5% !important;
+  }
+
+  .right-side p {
+    margin-left: 15% !important;
+  }
+
+  /* .game-container {
+    width: 110vh !important;
+  } */
+
+  .info .false-tries,
+  .info .true-tries {
+    margin-left: -120px !important;
+  }
+
+  .player-name {
+    font-size: 30px !important;
+    margin-left: -100px !important;
+  }
+
+  .game-over video {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  .play-again {
+    left: 500px !important;
+  }
+}
 
 /* ####################################### */
 .menu::before,
@@ -328,7 +359,7 @@ i {
   margin-top: 25px;
   filter: drop-shadow(2px 4px 6px black);
   position: relative;
-  width: 180px;
+  width: 20%;
   height: 230px;
   transition: 0.4s;
   margin-right: 25px;
