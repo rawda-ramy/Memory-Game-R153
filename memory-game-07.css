@@ -15,20 +15,7 @@ body {
   display: none;
   transition: 1s;
 }
-/* ####################################### */
-
-/* @media (max-width: 634px) {
-  .menu {
-    left: 2%;
-  }
-}
-@media (min-width: 635px) and (max-width: 834px) {
-  .right-side button {
-    margin-left: 60%;
-  }
-} */
-
-@media (min-width: 600px) and (max-width: 1400px) {
+@media (min-width: 400px) and (max-width: 1400px) {
   .right-side button {
     margin-left: 60% !important;
   }
@@ -153,48 +140,12 @@ body {
 .right-side p {
   margin-left: 300px;
 }
-/* ############################################ */
-/* @media (min-width: 634px) and (max-width: 834px) {
-  .right-side p {
-    margin-left: 30px;
-  }
-}
-
-@media (min-width: 835px) and (max-width: 967px) {
-  .right-side p {
-    margin-left: 15px;
-  }
-}
-
-@media (min-width: 968px) and (max-width: 1100px) {
-  .right-side p {
-    margin-left: 110px;
-  }
-} */
-
 /* ################################################ */
 
 .left-side p {
   margin-left: 20px;
 }
-/* 
-@media (min-width: 634px) and (max-width: 834px) {
-  .left-side p {
-    margin-left: 55px;
-  }
-}
 
-@media (min-width: 835px) and (max-width: 967px) {
-  .left-side p {
-    margin-left: 30px;
-  }
-}
-
-@media (min-width: 968px) and (max-width: 1100px) {
-  .left-side p {
-    margin-left: 120px;
-  }
-} */
 .start button {
   font-family: "Courgette", cursive;
   background-color: rgba(247, 214, 190, 0.71);
@@ -213,47 +164,11 @@ body {
 .right-side button {
   margin-left: 550px;
 }
-/* 
-@media (min-width: 634px) and (max-width: 834px) {
-  .right-side button {
-    margin-left: 120px;
-  }
-}
-
-@media (min-width: 835px) and (max-width: 967px) {
-  .right-side button {
-    margin-left: 170px;
-  }
-}
-
-@media (min-width: 968px) and (max-width: 1100px) {
-  .right-side button {
-    margin-left: 295px;
-  }
-} */
 
 .left-side button {
   margin-left: 30px;
 }
 /* ########################################## */
-/* 
-@media (min-width: 634px) and (max-width: 834px) {
-  .left-side button {
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 835px) and (max-width: 967px) {
-  .left-side button {
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: 968px) and (max-width: 1100px) {
-  .left-side button {
-    margin-left: 30px;
-  }
-} */
 /* ########################################### */
 
 .info {
